@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family: 'yoon';
+	font-weight: 900;
+	font-display: swap;
+	src: url('../font/YoonGothic790.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'yoon';
+	font-weight: 800;
+	font-display: swap;
+	src: url('../font/YoonGothic780.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'yoon';
+	font-weight: 700;
+	font-display: swap;
+	src: url('../font/YoonGothic770.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'yoon';
+	font-weight: 600;
+	font-display: swap;
+    src: url('../font/YoonGothic760.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'yoon';
+	font-weight: 500;
+	font-display: swap;
+    src: url('../font/YoonGothic750.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'yoon';
+	font-weight: 400;
+	font-display: swap;
+    src: url('../font/YoonGothic740.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'yoon';
+	font-weight: 300;
+	font-display: swap;
+    src: url('../font/YoonGothic730.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'yoon';
+	font-weight: 200;
+	font-display: swap;
+    src: url('../font/YoonGothic720.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'yoon';
+	font-weight: 100;
+	font-display: swap;
+    src: url('../font/YoonGothic710.otf') format('opentype');
+}
