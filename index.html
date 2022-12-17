@@ -9,9 +9,9 @@
     <!--css-->
     <link rel='stylesheet' href='./css/reset.css' />
     <link rel='stylesheet' href='./css/common.css' />
-    <link rel='stylesheet' href='./css/main.css' />
-    <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet"/>
-    <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet"/>
+    <link rel='stylesheet' href='./css/style.css' />
+    <!-- <link rel='stylesheet' href='./css/main.css' /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <!--favicon-->
     <link rel="shortcut icon" href="../img/favicon.ico" />
@@ -20,7 +20,7 @@
 
 <body>
     <div id="wrap">
-        <!--헤더 mb-->
+        <!--헤더 -->
         <header id="header" class="header">
             <div class="h-inner">
                 <button type="button" class="btn-menu">
@@ -41,7 +41,7 @@
                         <li class="gnb-list"><a href="./ticketing.html">예매</a></li>
                         <li class="gnb-list"><a href="./theater.html">극장</a></li>
                         <li class="gnb-list active"><a href="./store.html">스토어</a></li>
-                         <li class="gnb-list"><a href="./event.html">이벤트</a></li>
+                        <li class="gnb-list"><a href="./event.html">이벤트</a></li>
                     </ul>
                 </nav>
 
@@ -120,7 +120,7 @@
                                 </ul>
 
                                 <p class="summary">
-                                    재즈의 부활을 꿈꾸는 피아니스트 세바스찬과 성공을 꿈꾸는 배우 지망생 미아.<br/>
+                                    재즈의 부활을 꿈꾸는 피아니스트 세바스찬과 성공을 꿈꾸는 배우 지망생 미아.<br />
                                     인생에서 가장 빛나는 순간 만난 두 사람은 미완성인 서로의 무대를 함께 만들어가기 시작한다.
                                 </p>
 
@@ -150,28 +150,26 @@
 
             <!-- box-office-section -->
             <section class="box-office-section">
-                <article class="title-article">
-                    <div class="inner">
+                <div class="inner">
+                    <article class="title-article">
                         <span class="time">05.20 15:22 기준</span>
                         <div class="title-box">
                             <h1 class="title">Box Office</h1>
                             <p>
-                                현재 상영중인 <b>메가박스 영화의 실시간 예매순위</b>를 알려드립니다.<br/>
+                                현재 상영중인 <b>메가박스 영화의 실시간 예매순위</b>를 알려드립니다.<br />
                                 실시간 발권데이터를 전일기준까지 반영하여 주간/월별 통계를 제공합니다.
                             </p>
                             <a href="#" class="more">전체보기 + </a>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="movie-slide">
-                    <div class="inner">
+                    <article class="movie-slide">
                         슬라이드 들어감
-                    </div>
-                </article>
+                    </article>
+                </div>
 
                 <article class="movie-list-slide">
-                    월별/주간 슬라이드
+
                 </article>
             </section>
 
@@ -182,10 +180,181 @@
                         <h1 class="title">Curation</h1>
                         <a href="#" class="more">전체보기 +</a>
                     </div>
-                    <article>
 
+                    <article class="curation-article">
+                        <div class="big-wrap">
+                            <div class="img-wrap">
+                                <img src="./img/main/curation_01.png" alt="포스터1"/>
+                            </div>
+                            <div class="text-wrap">
+                                <h2 class="age all">[오페라] 신데렐라 @The Met</h2>
+                                <p>
+                                    신데렐라 이야기인 마스네의 <상드리옹>을 영어로 번역한 대본을 바탕으로
+                                    만들어진 믿고 보는 연출가 로랑 펠리의 천재적인 희극성
+                                    강단 있고 개성 넘치는 저음의 신데렐라가 보여주는 매력!
+                                </p>
+
+                                <div class="info-wrap">
+                                    <dl>
+                                        <dt>[장르]</dt>
+                                        <dd>공연 / 111분</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>[등급]</dt>
+                                        <dd>전체관람가</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>[개봉일]</dt>
+                                        <dd>2022.04.05</dd>
+                                    </dl>
+                                </div>
+                                <div class="button-group">
+                                    <button type="button">상세보기</button>
+                                    <button type="button">예매하기</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-wrap">
+                            <ul>
+                                <li class="active">
+                                    <div class="img">
+                                        <img src="./img/main/curation_01.png" alt="포스터 이미지"/>
+                                    </div>
+                                    <h3 class="title">[오페라]<br/> 신데렐라 @The Met</h3>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="./img/main/curation_02.png" alt="포스터 이미지"/>
+                                    </div>
+                                    <h3 class="title">[볼쇼이 발레 인 시네마]<br/> 파라오의 딸</h3>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="./img/main/curation_03.png" alt="포스터 이미지"/>
+                                    </div>
+                                    <h3 class="title">파리의 피아니스트:<br/> 후지코 헤밍의 시간들</h3>
+                                </li>
+                            </ul>
+                        </div>
                     </article>
                 </div>
+            </section>
+
+            <!-- private-section -->
+            <section class="private-section">
+                <div class="inner">
+                    <div class="title-box">
+                        <h1 class="title">Privatie Cinema</h1>
+                        <a href="#" class="more">전체보기 +</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- community-section -->
+            <section class="community-section">
+                <div class="inner">
+                    <div class="title">
+                        <span>COMMUNITY</span>
+                        <h1>공지사항</h1>
+                        <p>메가박스의 여러가지 공지사항들을 전합니다.</p>
+                    </div>
+
+                    <ul class="community-list">
+                        <li>
+                            <p>
+                                <b>[메가박스]</b>
+                                <민스미트 작전> 빵원티켓 프로모션 중단안내
+                            </p>
+                            <span>2022.05.06</span>
+
+                            <a href="#" class="more"></a>
+                        </li>
+                        <li>
+                            <p>
+                                <b>[아이넘버]</b>
+                                DB 점검으로 인한 서비스 일시 중단 안내 (4/28)
+                            </p>
+                            <span>2022.04.21</span>
+
+                            <a href="#" class="more"></a>
+                        </li>
+                        <li>
+                            <p>
+                                <b>[메가박스]</b>
+                                <민스미트 작전> 빵원티켓 프로모션 중단안내
+                            </p>
+                            <span>2022.04.18</span>
+
+                            <a href="#" class="more"></a>
+                        </li>
+                        <li>
+                            <p>
+                                메가박스 개인정보 처리방침 변경 안내
+                            </p>
+                            <span>2022.04.08</span>
+
+                            <a href="#" class="more"></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- insta-section -->
+            <section class="insta-section">
+                <div class="title">
+                    <div class="inner">
+                        <a href="#">
+                            <span class="img">
+                                <img src="./img/logo/logo_squared.png" alt="메가박스 로고"/>
+                            </span>
+                            <p>@MEGABOX</p>
+                        </a>
+                    </div>
+                </div>
+                <article class="swiper swipeerrr">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_01.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_02.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_03.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_04.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_05.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_06.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_07.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_02.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_03.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_04.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_05.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_06.png" alt="인스타 이미지"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/insta/insta_07.png" alt="인스타 이미지"/>
+                        </div>
+                    </div>
+                </article>
             </section>
         </main>
 
@@ -194,6 +363,9 @@
             <span>빠른예매</span>
             <span class="blind">빠른예매버튼</span>
         </a>
+
+        <!-- top-button -->
+        <button class="top-button"><span class="blind">맨 위로 올라가기 버튼</span></button>
 
         <footer id="footer">
             <div class="f-inner">
@@ -210,12 +382,13 @@
 
                 <h1 class="logo">
                     <a href="./index.html">
-                        <img src="./img/logo/logo.png" alt="로고"/>
+                        <img src="./img/logo/logo.png" alt="로고" />
                     </a>
                 </h1>
 
                 <div class="company-info">
-                    <p class="address">서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵경기장) ARS <a href="tel:1544-0070">1544-0070</a></p>
+                    <p class="address">서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵경기장) ARS <a href="tel:1544-0070">1544-0070</a>
+                    </p>
                     <ul>
                         <li>대표자명 홍정인</li>
                         <li>개인정보보호책임자 공성진</li>
@@ -225,7 +398,7 @@
                 </div>
 
                 <p class="copyright">COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved </p>
-            
+
                 <ul class="sns-wrap">
                     <li>
                         <a href="#" onclick="return false">
@@ -253,10 +426,19 @@
     </div>
 
     <!--Import-->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-    <script defer src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
-    <script type='text/javascript' defer src='./js/common.js'></script>
+    <script type='text/javascript' defer src='./js/jquery-3.6.0.js'></script>
+    <!-- <script type='text/javascript' defer src='./js/common.js'></script> -->
+    <script type='text/javascript' defer src='./js/main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swipeerrr", {
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 6,
+            centeredSlides: true,
+        });
+    </script>
 </body>
 
 </html>
