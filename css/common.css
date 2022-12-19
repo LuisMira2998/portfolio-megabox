@@ -251,7 +251,7 @@ html {
     bottom: 56px;
     right: 22px;
     z-index: 10;
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -304,15 +304,24 @@ html {
 
 /* top-button */
 .top-button {
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     bottom: 56px;
     right: 32px;
     transform: rotate(-90deg);
-    z-index: 9;
+    transition: opacity .4s ease-in-out;
+    z-index: -10;
     width: 110px;
     height: 110px;
     border-radius: 50%;
     background: #fff url('../img/icon/icon_next_dp.png')no-repeat center / 10px;
+}
+
+.top-button.on {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
 }
 
 /* h1 */
@@ -349,6 +358,23 @@ html {
 .tab li.active {
     border-color: #43349c;
     color: #fff;
+}
+
+.tab li.add {
+    position: relative;
+}
+
+.tab li.add::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: calc(50% - 100px);
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #59beca;
 }
 
 /* slidebar */
@@ -484,4 +510,62 @@ html {
     border-radius: 50%;
     border: 1px solid #8370e8;
     background: url('../img/icon/icon_next_pp.png') no-repeat center / 7px;
+}
+
+/* selectbox */
+.selectbox {
+    position: relative;
+}
+
+.selectbox button {
+    opacity: .6;
+    height: 43px;
+    border-radius: 5px;
+    background: #161616;
+    text-align: left;
+    color: #bbb;
+}
+
+.selectbox .select-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .4;
+    width: 36px;
+    height: 36px;
+    color: #c6c6c6;
+    cursor: pointer;
+}
+
+/* .pagination li + li {
+    margin-left: 33px;
+} */
+
+.pagination .prev {
+    background: url('../img/icon/icon_next_gray.png') no-repeat center / 5px;
+}
+.pagination .next {
+    transform: rotate(180deg);
+    background: url('../img/icon/icon_next_gray.png') no-repeat center / 5px;
+}
+
+.pagination li.active {
+    opacity: 1;
+    background: #594ab0;
+    border-radius: 50%;
 }

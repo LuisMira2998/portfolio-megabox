@@ -7,15 +7,17 @@ $(function () {
         if ( boxOfficeSection <= nowScroll ) {
             $('#header').addClass('active');
             $('.sale-button').addClass('top');
-            $('.top-button').fadeIn(300);
+            $('.top-button').addClass('on');
         } else {
             $('#header').removeClass('active');
             $('.sale-button').removeClass('top');
-            $('.top-button').fadeOut(300);
+            $('.top-button').removeClass('on');
         }
-
         // console.log('섹션 높이: ' + boxOfficeSection + '지금스크롤 : ' + nowScroll)
     })
 
     // ================ top button ================
+    $('.top-button').on('click', function() {
+        $('html, body').animate({scrollTop: '0'}, 680);
+    })
 })

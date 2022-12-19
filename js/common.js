@@ -42,5 +42,28 @@ $(function () {
             draggable: true,
         },
     })
+    
+    var recommendEvent = new Swiper(".recommend-slide-container", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+        },
+        on : {
+            slideChange: function() {
+                let currentSlide = $(recommendEvent.slides[recommendEvent.activeIndex]);
+                let nextSlide = recommendEvent.slides[recommendEvent.activeIndex + 3];
+            
+                $('.swiper-slide').removeClass('off');
+                
+                if(!$(nextSlide).hasClass('off')){
+                    $(nextSlide).addClass('off')
+                }else{
+                    $(currentSlide).removeClass('off')
+                }
+            }
+        }
+    })
 
 })
