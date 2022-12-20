@@ -1,4 +1,9 @@
 $(function () {
+    // ================ top button ================
+    $('.top-button').on('click', function() {
+        $('html, body').animate({scrollTop: '0'}, 680);
+    })
+
     $('.theater .open-list li').on('click', function () {
         $('.theater .open-list li').removeClass('active');
         $(this).toggleClass('active');

@@ -16,8 +16,22 @@ $(function () {
         // console.log('섹션 높이: ' + boxOfficeSection + '지금스크롤 : ' + nowScroll)
     })
 
-    // ================ top button ================
-    $('.top-button').on('click', function() {
-        $('html, body').animate({scrollTop: '0'}, 680);
+    var boxOfficeList = new Swiper(".box-office-slide", {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+        },
     })
+
+        // slide check 
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+        },
+    });
 })
