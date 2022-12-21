@@ -1640,3 +1640,282 @@
     z-index: 1;
     visibility: visible;
 }
+
+
+/* ================= ticketing ================= */
+#wrap-content.ticketing {
+    padding-bottom: 500px;
+}
+#wrap-content.ticketing .inner {
+    display: flex;
+}
+
+#wrap-content.ticketing .big-section {
+    position: sticky;
+    top: 0;
+    width: 700px;
+    height: fit-content;
+}
+
+#wrap-content.ticketing .title-wrap {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+}
+
+#wrap-content.ticketing .title-wrap .title {
+    margin-right: 40px;
+}
+
+#wrap-content.ticketing .title-box .title::after{
+    display: none;
+}
+
+#wrap-content.ticketing .title-wrap span {
+    opacity: .3;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #c6c6c6;
+}
+
+#wrap-content.ticketing .title-wrap ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#wrap-content.ticketing .title-wrap li {
+    position: relative;
+}
+
+#wrap-content.ticketing .title-wrap li + li {
+    margin-left: 50px;
+}
+
+#wrap-content.ticketing .title-wrap li.add::after {
+    right: -18px;
+}
+
+#wrap-content.ticketing .box-office-slide {
+    overflow: hidden;
+}
+
+#wrap-content.ticketing .box-office-slide .title-box {
+    margin: 20px 0 30px;
+}
+
+#wrap-content.ticketing .box-office-slide .title-box .title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#wrap-content.ticketing .box-office-slide .poster {
+    transition: .3s ease;
+    border: 3px solid transparent;
+}
+
+#wrap-content.ticketing .box-office-slide li.on .poster {
+    border-color: #55b5c0;
+}
+
+/* result-section */
+#wrap-content.ticketing .result-section {
+    width: 490px;
+    margin-left: auto;
+}
+
+#wrap-content.ticketing .result-section article {
+    overflow: hidden;
+    border-radius: 8px 8px 5px 5px;
+    background: #161616;
+}
+
+#wrap-content.ticketing .result-section article + article {
+    transform: translateY(-5px);
+}
+
+#wrap-content.ticketing .result-section .title-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 68px;
+    padding: 0 38px;
+    border: rgb(65, 50, 145);
+    /* border: 1px solid rgba(65, 50, 145, .3); */
+    background: linear-gradient(to right, rgba(68, 30, 178, .5), rgba(89, 190, 201, .5) 137%);
+}
+
+#wrap-content.ticketing .result-section .title-box p {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e3e3e3;
+}
+#wrap-content.ticketing .result-section .title-box span {
+    mix-blend-mode: hard-light;
+}
+
+#wrap-content.ticketing .result-section .title-box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    transition: all .3s;
+    width: 13px;
+    height: 8px;
+    background: url('../img/icon/icon_next_wh.png') no-repeat center / cover;
+}
+
+#wrap-content.ticketing .result-section .title-box.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+#wrap-content.ticketing .result-section .result-content {
+    padding: 36px 36px 45px;
+}
+
+#wrap-content.ticketing .result-section .info {
+    margin-top: 20px;
+    color: #bbb;
+}
+
+#wrap-content.ticketing .result-section .info span {
+    color: #6f5bde;
+}
+
+#wrap-content.ticketing .result-section .info::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background: #413291;
+}
+
+#wrap-content.ticketing .result-section .movie-result {
+    display: flex;
+    align-items: center;
+}
+
+#wrap-content.ticketing .result-section .movie-result li {
+    overflow: hidden;
+    width: 128px;
+    height: 186px;
+    border-radius: 2px;
+    opacity: .6;
+}
+
+#wrap-content.ticketing .result-section .movie-result li + li {
+    margin-left: 15px;
+}
+
+#wrap-content.ticketing .result-section .movie-result li.on {
+    opacity: 1;
+}
+
+#wrap-content.ticketing .result-section .movie-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#wrap-content.ticketing .result-section .schedule-list {
+    display: flex;
+    align-items: center;
+}
+#wrap-content.ticketing .result-section .schedule-list li {
+    color: #686868;
+}
+
+/* theater-list */
+#wrap-content.ticketing .result-section .theater-list li {
+    display: flex;
+    align-items: center;
+    height: 57px;
+    padding: 0 33px;
+    border-radius: 2px;
+    background: #378791;
+    font-size: 15px;
+    font-weight: 500;
+    color: #d7dfe0;
+}
+
+#wrap-content.ticketing .result-section .theater-list li + li {
+    margin-top: 12px;
+}
+
+#wrap-content.ticketing .result-section .theater-list .delete-button {
+    width: 15px;
+    height: 15px;
+    margin-left: auto;
+    background: url('../img/icon/icon_close.png') no-repeat center / 10px;
+}
+
+#wrap-content.ticketing .result-section li.empty {
+    opacity: .6;
+    background: transparent url('../img/icon/icon_plus.png') no-repeat center / 10px;
+    border: 1px solid #3d3b47;
+}
+
+#wrap-content.ticketing .result-section .movie-info {
+    display: flex;
+    align-items: center;
+}
+
+#wrap-content.ticketing .result-section .movie-info .poster {
+    width: 150px;
+    height: 205px;
+    margin-right: 29px;
+    border: 1px solid #413291;
+}
+
+#wrap-content.ticketing .result-section .movie-info .title {
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#wrap-content.ticketing .result-section .movie-info p {
+    opacity: .7;
+    margin: 23px 0 14px;
+    color: #bbb;
+}
+
+#wrap-content.ticketing .result-section .movie-info h5 {
+    opacity: .7;
+    color: #fff;
+}
+
+#wrap-content.ticketing .result-section .seat-select {
+    margin: 25px 0 0;
+    text-align: center;
+}
+
+#wrap-content.ticketing .result-section .seat-select p {
+    opacity: .3;
+    color: #c6c6c6;
+}
+
+#wrap-content.ticketing .result-section .seat-select .seat-img {
+    margin: 20px 0 25px;
+}
+
+#wrap-content.ticketing .result-section .seat-select h3 span {
+    color: #725aea;
+}
+
+#wrap-content.ticketing .result-section .done-button {
+    width: 100%;
+    height: 75px;
+    margin-top: 40px;
+    border-radius: 2px;
+    border: 1px solid rgba(108, 89, 207, .8);
+    background: linear-gradient(to left, rgba(68, 30, 178, .5), rgba(89, 190, 201, .5) 265%);
+    font-size: 23px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}

@@ -1,7 +1,9 @@
 $(function () {
     // ================ top button ================
-    $('.top-button').on('click', function() {
-        $('html, body').animate({scrollTop: '0'}, 680);
+    $('.top-button').on('click', function () {
+        $('html, body').animate({
+            scrollTop: '0'
+        }, 680);
     })
 
     $('.theater .open-list li').on('click', function () {
@@ -31,13 +33,12 @@ $(function () {
             prevEl: ".swiper-button-prev",
         },
     })
-    
+
     var boxOfficeList = new Swiper(".box-office-slide", {
         slidesPerView: 4,
         slidesPerColumn: 2,
         slidesPerGroup: 2,
         spaceBetween: 25,
-        // slidesPerColumnFill: "row",
         grid: {
             rows: 2,
             fill: 'row',
@@ -47,7 +48,7 @@ $(function () {
             draggable: true,
         },
     })
-    
+
     var recommendEvent = new Swiper(".recommend-slide-container", {
         slidesPerView: 4,
         spaceBetween: 20,
@@ -55,19 +56,28 @@ $(function () {
             el: ".swiper-scrollbar",
             draggable: true,
         },
-        on : {
-            slideChange: function() {
+        on: {
+            slideChange: function () {
                 let currentSlide = $(recommendEvent.slides[recommendEvent.activeIndex]);
                 let nextSlide = recommendEvent.slides[recommendEvent.activeIndex + 3];
-            
+
                 $('.swiper-slide').removeClass('off');
-                
-                if(!$(nextSlide).hasClass('off')){
+
+                if (!$(nextSlide).hasClass('off')) {
                     $(nextSlide).addClass('off')
-                }else{
+                } else {
                     $(currentSlide).removeClass('off')
                 }
             }
+        }
+    })
+
+    $('#wrap-content.ticketing .result-section .title-box').on('click', function () {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).next().slideUp();
+        } else {
+            $(this).next().slideDown();
         }
     })
 

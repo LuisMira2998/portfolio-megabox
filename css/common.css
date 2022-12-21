@@ -527,7 +527,7 @@ html {
     color: #bbb;
 }
 
-.selectbox .select-box {
+.selectbox .select-list {
     display: none;
     position: absolute;
     top: 0;
@@ -553,10 +553,6 @@ html {
     cursor: pointer;
 }
 
-/* .pagination li + li {
-    margin-left: 33px;
-} */
-
 .pagination .prev {
     background: url('../img/icon/icon_next_gray.png') no-repeat center / 5px;
 }
@@ -572,7 +568,7 @@ html {
 }
 
 /* movie-list */
-.movie-list .age::before {
+.age::before {
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -584,15 +580,15 @@ html {
     background-size: cover;
 }
 
-.movie-list .age.blue::before {
+.age.blue::before {
     background-image: url('../img/icon/icon_movie_12.png');
 }
 
-.movie-list .age.red::before {
+.age.red::before {
     background-image: url('../img/icon/icon_movie_19.png');
 }
 
-.movie-list .age.yellow::before {
+.age.yellow::before {
     background-image: url('../img/icon/icon_movie_15.png');
 }
 
